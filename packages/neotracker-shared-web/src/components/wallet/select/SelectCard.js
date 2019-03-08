@@ -201,7 +201,7 @@ function SelectCard({
   if (account == null) {
     content = (
       <Typography className={classes.content} variant="body1">
-        Open or create a account to view balance and claim GAS.
+        Open or create a account to view balance and claim CRON.
       </Typography>
     );
     if (forward) {
@@ -239,15 +239,14 @@ function SelectCard({
               text: 'NEW WALLET',
               tooltip:
                 'Generate a new private key and address in order to interact ' +
-                'with the blockchain to receive NEO, GAS or other tokens, ' +
-                'claim GAS and more.',
+                'with the blockchain to receive CRONIUM, CRON or other tokens.',
             })}
             {makeButton({
               path: routes.WALLET_OPEN_WALLET,
               text: 'OPEN WALLET',
               tooltip:
                 'Open a account to interact with the blockchain in order to send ' +
-                'NEO, GAS or other tokens, claim GAS and more.',
+                'CRONIUM, CRON or other tokens.',
             })}
             <SelectCardMenu
               className={classes.buttonMargin}

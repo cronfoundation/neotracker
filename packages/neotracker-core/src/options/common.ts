@@ -112,29 +112,29 @@ export const common = ({
     rootAssets: {
       path: configuration.rootAssetsPath,
     },
-    domain: '127.0.0.1',
+    domain: 'wallet.cron.global',
     rpcURL,
     server: {
       keepAliveTimeoutMS: 650000,
     },
     appOptions: {
       meta: {
-        title: 'NEO Tracker Blockchain Explorer & Wallet',
-        name: 'NEO Tracker',
+        title: 'CRON Tracker Blockchain Explorer & Wallet',
+        name: 'CRON Tracker',
         description:
-          'NEO blockchain explorer and wallet. Explore blocks, transactions, addresses and more. Transfer NEO or GAS, claim GAS and more with the web wallet.',
+          'CRON blockchain explorer and wallet. Explore blocks, transactions, addresses and more. Transfer CRONIUM or CRON, claim CRON and more with the web wallet.',
         walletDescription:
-          'NEO Tracker Wallet is a light web wallet that lets NEO holders interact ' +
-          'with the NEO blockchain. Transfer NEO, GAS or other tokens, claim GAS, ' +
+          'CRON Tracker Wallet is a light web wallet that lets CRONIUM holders interact ' +
+          'with the CRON blockchain. Transfer CRONIUM, CRON or other tokens, claim CRON, ' +
           'print paper wallets and more.',
         social: {
-          fb: 'https://www.facebook.com/neotracker.io/',
-          twitter: 'https://twitter.com/neotrackerio',
+          fb: '',
+          twitter: '',
         },
-        donateAddress: 'AKDVzYGLczmykdtRaejgvWeZrvdkVEvQ1X',
+        donateAddress: '',
       },
       url: `http://127.0.0.1:${port}`,
-      rpcURL: `http://127.0.0.1:${port}/rpc`,
+      rpcURL: `https://wallet.cron.global/rpc`,
       maintenance: false,
       disableWalletModify: false,
       // 3 minutes

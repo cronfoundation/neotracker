@@ -52,7 +52,7 @@ const environment = {
     db,
     directDB: db,
     server: {
-      host: 'localhost',
+      host: '0.0.0.0',
       port,
     },
     network,
@@ -63,7 +63,7 @@ const environment = {
     pubSub: {},
   },
   start: {
-    metricsPort: 1341,
+    metricsPort: 80,
   },
 };
 

@@ -123,10 +123,10 @@ function ClaimGASSteps({
       <div className={classNames(className, classes.root)}>
         <ClaimGASStep
           className={classes.padding}
-          stepDescription="1. Send NEO to account address."
+          stepDescription="1. Send CRONIUM to account address."
           tooltip={
-            'In order to claim GAS we must "spend" it, so we create a ' +
-            'transaction that sends all NEO back to the account address.'
+            'In order to claim CRON we must "spend" it, so we create a ' +
+            'transaction that sends all CRONIUM back to the account address.'
           }
           done={spendDone}
           inProgress={spendInProgress}
@@ -136,7 +136,7 @@ function ClaimGASSteps({
           className={classes.padding}
           stepDescription="2. Wait for confirmation of transfer."
           tooltip={
-            'Wait for the transfer transaction that will "spend" all NEO to be ' +
+            'Wait for the transfer transaction that will "spend" all to be ' +
             'confirmed. Confirming a transaction can take up to a minute to process.'
           }
           done={spendConfirmDone}
@@ -146,9 +146,9 @@ function ClaimGASSteps({
         />
         <ClaimGASStep
           className={classes.padding}
-          stepDescription="3. Claim GAS."
+          stepDescription="3. Claim CRON."
           tooltip={
-            'Claim all GAS for "spent" transactions including the ones we ' +
+            'Claim all CRON for "spent" transactions including the ones we ' +
             '"spent" in the previous steps. '
           }
           done={claimDone}
@@ -158,8 +158,8 @@ function ClaimGASSteps({
         <ClaimGASStep
           stepDescription="4. Wait for confirmation of claim."
           tooltip={
-            'Wait for the GAS claim transaction for the ' +
-            '"spent" NEO transactions to be confirmed. Confirming a ' +
+            'Wait for the CRON claim transaction for the ' +
+            '"spent" CRONIUM transactions to be confirmed. Confirming a ' +
             'transaction can take up to a minute to process.'
           }
           done={claimConfirmDone}

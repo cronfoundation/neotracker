@@ -64,7 +64,7 @@ function ClaimGASButton({
         color="primary"
       >
         <Typography className={classes.buttonText} variant="body1">
-          CLAIM GAS
+          CLAIM CRON
         </Typography>
       </Button>
     </div>
@@ -143,7 +143,7 @@ const enhance: HOC<*, *> = compose(
             claimError({
               address: account.id.address,
               error:
-                'Claiming all GAS failed: ' +
+                'Claiming all CRON failed: ' +
                 `${sanitizeError(error).clientMessage}. ` +
                 'Please try again or refresh the page.',
             }),

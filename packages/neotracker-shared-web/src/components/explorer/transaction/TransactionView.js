@@ -65,8 +65,8 @@ function TransactionView({
   const columns = [
     ['Hash', transaction.hash],
     ['Time', <BlockTime blockTime={transaction.block_time} />],
-    ['Network Fee', `${formatNumber(transaction.network_fee)} GAS`],
-    ['System Fee', `${formatNumber(transaction.system_fee)} GAS`],
+    ['Network Fee', `${formatNumber(transaction.network_fee)} CRON`],
+    ['System Fee', `${formatNumber(transaction.system_fee)} CRON`],
     ['Size', getBlockSize(transaction.size)],
     ['Block', <BlockIndexLink blockIndex={transaction.block_id} />],
   ];

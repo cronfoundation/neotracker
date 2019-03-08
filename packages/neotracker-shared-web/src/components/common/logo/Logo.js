@@ -2,6 +2,21 @@
 import * as React from 'react';
 
 import { type HOC, compose, pure } from 'recompose';
+import classNames from 'classnames';
+import { type Theme } from '../../../styles/createTheme';
+import { withStyles } from '../../../lib/base';
+
+
+const styles = (theme: Theme) => ({  
+  root: {
+    backgroundImage: "url('/public/logo.png')",
+    backgroundSize: "contain",
+    backgroundRepeat: "no-repeat",
+    width: 64,
+    height: 64
+  },
+});
+
 
 type ExternalProps = {|
   id: string,
@@ -10,7 +25,9 @@ type ExternalProps = {|
   white?: boolean,
   className?: string,
 |};
-type InternalProps = {||};
+type InternalProps = {|
+  classes: Object
+|};
 type Props = {|
   ...ExternalProps,
   ...InternalProps,
@@ -21,6 +38,7 @@ function Logo({
   height,
   white,
   className,
+  classes,
 }: Props): React.Element<*> {
   const a = `${id}a`;
   const b = `${id}b`;
@@ -88,6 +106,7 @@ function Logo({
     );
   }
   return (
+/*
     <svg
       className={className}
       width={`${width == null ? 24 : width}px`}
@@ -98,9 +117,11 @@ function Logo({
       {defs}
       {g}
     </svg>
+*/
+    <div className={classNames(className, classes.root)}></div>
   );
 }
 
-const enhance: HOC<*, *> = compose(pure);
+const enhance: HOC<*, *> = compose(withStyles(styles),pure);
 
 export default (enhance(Logo): React.ComponentType<ExternalProps>);

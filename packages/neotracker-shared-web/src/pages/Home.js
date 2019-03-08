@@ -195,14 +195,6 @@ function Home({
 
   return (
     <div className={classNames(className, classes.root)}>
-      <SearchCard className={classes.marketCard} />
-      <MainSelectCard className={classes.marketCard} />
-      <MarketCard
-        className={classes.marketCard}
-        neo_usd_data_points={props.neo_usd_data_points}
-        neo_btc_data_points={props.neo_btc_data_points}
-        neo_current_price={props.neo_current_price}
-      />
       <div className={classes.blocksAndTransactions}>
         {renderCard(
           'Explore Blocks',

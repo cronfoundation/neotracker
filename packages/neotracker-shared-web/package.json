@@ -2,11 +2,11 @@
   "name": "@neotracker/shared-web",
   "version": "0.0.1-alpha.0",
   "keywords": [
-    "neo",
+    "cron",
     "blockchain",
-    "neotracker"
+    "crontracker"
   ],
-  "description": "NEO Tracker shared GraphQL code.",
+  "description": "CRON Tracker shared GraphQL code.",
   "repository": "https://github.com/neotracker/neotracker",
   "bugs": "https://github.com/neotracker/neotracker/issues",
   "license": "MIT",

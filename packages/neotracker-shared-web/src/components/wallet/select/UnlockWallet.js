@@ -96,7 +96,7 @@ function UnlockWallet({
 }: Props): React.Element<*> {
   return (
     <div className={classNames(className, classes.root)}>
-      <Typography variant="body1">Unlock your wallet to claim GAS.</Typography>
+      <Typography variant="body1">Unlock your wallet to claim CRON.</Typography>
       <div className={classes.passwordArea}>
         <PasswordField
           id="unlock-wallet-password"

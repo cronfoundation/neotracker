@@ -16,7 +16,7 @@ type Props = {|
 function PaperWalletHeader({ className }: Props): React.Element<*> {
   return (
     <img
-      alt="NEO Tracker"
+      alt="CRON Tracker"
       className={className}
       src={routes.makePublic('/paper-wallet-sidebar.png')}
       height="100%"

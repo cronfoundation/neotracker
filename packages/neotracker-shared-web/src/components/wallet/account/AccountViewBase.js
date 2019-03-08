@@ -174,7 +174,7 @@ function AccountViewBase({
           variant="subheading"
           component="p"
         >
-          GAS available to claim:
+          CRON available to claim:
         </Typography>
         <CoinValue
           className={classNames(classes.marginTop)}

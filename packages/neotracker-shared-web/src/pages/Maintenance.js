@@ -45,13 +45,13 @@ const GenericErrorPage = ({ classes }: Props) => (
             Down for Maintenance
           </Typography>
           <Typography variant="subheading">
-            NEO Tracker is currently down for maintenance.
+            CRON Tracker is currently down for maintenance.
           </Typography>
           <Typography variant="body1">
             Follow us on{' '}
             <Link
               className={classes.link}
-              path="https://twitter.com/neotrackerio"
+              path=""
               title="Twitter"
               absolute
               newTab

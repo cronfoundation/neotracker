@@ -37,12 +37,12 @@ function WalletPageUpsell({
 }: Props): React.Element<*> {
   return (
     <Typography className={className}>
-      {`Claim GAS, transfer NEO, GAS or other tokens and more with `}
+      {`Claim CRON, transfer CRONIUM, CRON or other tokens and more with `}
       <Link
         className={classes.inline}
         path={routes.WALLET_HOME}
         onClick={onClick}
-        title="NEO Tracker Wallet"
+        title="CRON Tracker Wallet"
         component="span"
       />
     </Typography>

@@ -1,7 +1,7 @@
 {
   "name": "@neotracker/build",
   "version": "0.0.1-alpha.0",
-  "description": "NEO Tracker build utilities.",
+  "description": "CRON Tracker build utilities.",
   "main": "./src/index.ts",
   "dependencies": {
     "@babel/core": "^7.0.0",
@@ -22,7 +22,7 @@
     "@neo-one/node-esnext-esm": "^1.0.0-alpha.116",
     "@neo-one/node-neo-settings-esnext-esm": "^1.0.0-alpha.77",
     "@neo-one/utils-esnext-esm": "^1.0.0-alpha.64",
-    "@neotracker/core": "^1.0.11",
+    "@neotracker/core": "^1.0.10",
     "@neotracker/server-graphql": "^0.0.1-alpha.0",
     "@neotracker/server-utils": "^0.0.1-alpha.0",
     "@neotracker/server-web": "^0.0.1-alpha.0",

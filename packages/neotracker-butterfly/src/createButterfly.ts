@@ -20,18 +20,16 @@ const DEFAULT_LOGGER: Logger = {
   },
 };
 
-const walk = async (rootDir: string, maxDepth = -1, curDepth = 0): Promise<ReadonlyArray<string>> => {
+const walk = async (rootDir: string): Promise<ReadonlyArray<string>> => {
   const rdResp = await fs.readdir(rootDir);
-
-  const keepDigging = !(maxDepth >= 0 && curDepth > maxDepth);
 
   const result = await Promise.all(
     rdResp.map(
       async (file): Promise<ReadonlyArray<string>> => {
         const curPath = path.join(rootDir, file);
         const fileStats = await fs.stat(curPath);
-        if (fileStats.isDirectory() && keepDigging) {
-          return walk(curPath, maxDepth, curDepth + 1);
+        if (fileStats.isDirectory()) {
+          return walk(curPath);
         }
         if (fileStats.isFile()) {
           return [curPath];
@@ -44,11 +42,11 @@ const walk = async (rootDir: string, maxDepth = -1, curDepth = 0): Promise<Reado
 
   return result.reduce((arrOut, arrIn) => [...arrOut, ...arrIn], []);
 };
+const getFiles = async (): Promise<ReadonlyArray<string>> => {
+  const rootPath = appRootDir.get();
 
-const defaultRootPath = appRootDir.get();
-
-const getFiles = async (rootPath: string = defaultRootPath, maxDepth = -1): Promise<ReadonlyArray<string>> =>
-  walk(rootPath, maxDepth);
+  return walk(rootPath);
+};
 
 export const createButterfly = async ({ log = DEFAULT_LOGGER }: ButterflyOptions): Promise<Butterfly> => {
   const exec = (file: string, argsOrOptions?: execa.Options | ReadonlyArray<string>, optionsIn?: execa.Options) => {

@@ -19,19 +19,19 @@ const DEFAULT_USER_AGENT =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36';
 const DEFAULT_APP_OPTIONS$: Observable<AppOptions> = new BehaviorSubject({
   meta: {
-    title: 'NEO Tracker Blockchain Explorer & Wallet',
-    name: 'NEO Tracker',
+    title: 'CRON Tracker Blockchain Explorer & Wallet',
+    name: 'CRON Tracker',
     description:
-      'NEO blockchain explorer and wallet. Explore blocks, transactions, addresses and more. Transfer NEO or GAS, claim GAS and more with the web wallet.',
+      'CRON blockchain explorer and wallet. Explore blocks, transactions, addresses and more. Transfer CRONIUM or CRON, claim CRON and more with the web wallet.',
     walletDescription:
-      'NEO Tracker Wallet is a light web wallet that lets NEO holders interact ' +
-      'with the NEO blockchain. Transfer NEO, GAS or other tokens, claim GAS, ' +
+      'CRON Tracker Wallet is a light web wallet that lets CRONIUM holders interact ' +
+      'with the CRON blockchain. Transfer CRONIUM, CRON or other tokens, claim CRON, ' +
       'print paper wallets and more.',
     social: {
-      fb: 'https://www.facebook.com/neotracker.io/',
-      twitter: 'https://twitter.com/neotrackerio',
+      fb: '',
+      twitter: '',
     },
-    donateAddress: 'AKDVzYGLczmykdtRaejgvWeZrvdkVEvQ1X',
+    donateAddress: '',
   },
   url: `http://127.0.0.1:1400`,
   rpcURL: `http://127.0.0.1:1400/rpc`,

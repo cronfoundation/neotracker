@@ -61,14 +61,14 @@ function TransferCard({
 }: Props): React.Element<*> {
   let content = (
     <Typography variant="body1">
-      Open or create a account to send NEO, GAS and other tokens.
+      Open or create a account to send CRONIUM, CRON and other tokens.
     </Typography>
   );
   if (account != null) {
     if (wallet != null && wallet.type === 'locked') {
       content = (
         <Typography variant="body1">
-          Unlock your account to send NEO, GAS and other tokens.
+          Unlock your account to send CRONIUM, CRON and other tokens.
         </Typography>
       );
     } else if (appOptions.disableWalletModify) {

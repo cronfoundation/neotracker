@@ -27,7 +27,7 @@ export interface Butterfly {
   };
   readonly util: {
     readonly removeFiles: (fileList: ReadonlyArray<string>) => Promise<void>;
-    readonly getFiles: (rootPath?: string, maxDepth?: number) => Promise<ReadonlyArray<string>>;
+    readonly getFiles: () => Promise<ReadonlyArray<string>>;
   };
 }
 

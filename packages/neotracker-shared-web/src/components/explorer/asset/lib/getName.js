@@ -6,8 +6,8 @@ import locale2 from 'locale2';
 import { getBest } from '../../../../utils';
 
 const NAME_MAP = {
-  [NEO_ASSET_HASH]: 'NEO',
-  [GAS_ASSET_HASH]: 'GAS',
+  [NEO_ASSET_HASH]: 'CRONIUM',
+  [GAS_ASSET_HASH]: 'CRON',
 };
 
 const getName = (name, lang) => {

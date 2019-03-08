@@ -7,6 +7,6 @@ export const ZERO_GAS_COIN = {
   value: '0',
   asset: {
     id: GAS_ASSET_HASH,
-    symbol: 'GAS',
+    symbol: 'CRON',
   },
 };

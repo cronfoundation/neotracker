@@ -12,13 +12,13 @@ export const GAS_ASSET_ID = GAS_ASSET_HASH;
 export const NEO_COIN_ASSET = {
   id: `Asset:${NEO_ASSET_HASH}`,
   transaction_id: `Transaction:${NEO_ASSET_HASH}`,
-  name: [{ lang: 'zh-CN', name: '小蚁股' }, { lang: 'en', name: 'AntShare' }],
-  symbol: 'NEO',
+  name: [{ lang: 'zh-CN', name: '小蚁股' }, { lang: 'en', name: 'CRONIUM' }],
+  symbol: 'CRONIUM',
 };
 
 export const GAS_COIN_ASSET = {
   id: `Asset:${GAS_ASSET_HASH}`,
   transaction_id: `Transaction:${GAS_ASSET_HASH}`,
-  name: [{ lang: 'zh-CN', name: '小蚁币' }, { lang: 'en', name: 'AntCoin' }],
-  symbol: 'GAS',
+  name: [{ lang: 'zh-CN', name: '小蚁币' }, { lang: 'en', name: 'CRON' }],
+  symbol: 'CRON',
 };

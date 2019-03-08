@@ -9,8 +9,8 @@ export const Logo = () => (
     role="img"
     aria-label="[title]"
   >
-    <title id="title">NEO Tracker Component Explorer</title>
-    <desc id="description">NEO Tracker Component Explorer</desc>
+    <title id="title">CRON Tracker Component Explorer</title>
+    <desc id="description">CRON Tracker Component Explorer</desc>
     <defs>
       <linearGradient x1="45.734%" y1="-4.797%" x2="45.392%" y2="144.834%" id="a">
         <stop stopColor="#58BE23" offset="0%" />
@@ -29,7 +29,7 @@ export const Logo = () => (
       </g>
       <text fontFamily="Roboto-Medium, Roboto" fontSize="20" fontWeight="400" fillOpacity=".87" fill="#000">
         <tspan x="31.62" y="19">
-          NEO Tracker
+          CRON Tracker
         </tspan>
       </text>
     </g>

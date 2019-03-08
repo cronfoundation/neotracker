@@ -28,6 +28,7 @@ export class ButterflyLocalHandler {
 
     try {
       const result = await check.run(butterfly);
+      // tslint:disable-next-line: no-console
       butterfly.log.info(`Check ${name} conclusion: ${result.conclusion}
           title: ${result.title}
           summary: ${result.summary}
@@ -36,7 +37,8 @@ export class ButterflyLocalHandler {
 
       return result.conclusion === 'failure' ? 1 : 0;
     } catch (error) {
-      butterfly.log.info(`Unexpected error ocurred while running: ${name} failed\n${error.stack}`);
+      // tslint:disable-next-line: no-console
+      butterfly.log.error(`Unexpected error ocurred while running: ${name} failed\n${error.stack}`);
 
       return 1;
     }

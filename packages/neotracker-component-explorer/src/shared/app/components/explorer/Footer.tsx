@@ -22,8 +22,8 @@ export const Footer = (props: ComponentProps<typeof Wrapper>) => (
   <Wrapper {...props}>
     <ContentWrapper column>
       <Paragraph>
-        Copyright © 2017-
-        {year} NEO Tracker
+        Copyright © 2019-
+        {year} CRON Tracker
       </Paragraph>
     </ContentWrapper>
   </Wrapper>

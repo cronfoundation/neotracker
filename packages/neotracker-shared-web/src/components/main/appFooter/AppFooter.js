@@ -82,25 +82,8 @@ function AppFooter({
   return (
     <div className={classNames(className, classes.root)}>
       <div className={classes.firstRow}>
-        <div className={classes.col}>
-          <DonateLink />
-        </div>
-        <div className={classes.col}>
-          <SocialLink
-            icon={<TwitterIcon className={classes.icon} />}
-            title="Twitter"
-            link={appOptions.meta.social.twitter}
-          />
-          <SocialLink
-            icon={<FacebookIcon className={classes.icon} />}
-            title="Facebook"
-            link={appOptions.meta.social.fb}
-          />
-        </div>
-      </div>
-      <div className={classes.secondRow}>
         <Typography className={classes.copyright} variant="caption">
-          {`${appOptions.meta.name} © 2017`}
+          {`${appOptions.meta.name} © 2019`}
         </Typography>
       </div>
     </div>

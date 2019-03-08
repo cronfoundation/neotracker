@@ -14,7 +14,7 @@ yargs.describe('rpc-url', 'NEO•ONE node rpc url.').default('rpc-url', 'http://
 yargs.describe('next', 'Run NEO Tracker Next').default('next', false);
 yargs.describe('db-file', 'DB file').default('db-file', 'db.sqlite');
 yargs.describe('port', 'Port to listen on').default('port', 1340);
-yargs.describe('metrics-port', 'Port to serve metrics on').default('port', 1341);
+yargs.describe('metrics-port', 'Port to serve metrics on').default('port', 80);
 
 // tslint:disable-next-line readonly-array
 const getDistPath = (...paths: string[]) => path.resolve(__dirname, '..', 'dist', ...paths);
@@ -57,7 +57,7 @@ const environment = {
     db,
     directDB: db,
     server: {
-      host: 'localhost',
+      host: '0.0.0.0',
       port,
     },
     network,

@@ -71,10 +71,10 @@ function TransactionSummaryFooter({
           className={classNames(classes.margin, classes.font)}
           variant="body1"
         >
-          {`Network Fee: ${formatNumber(transaction.network_fee)} GAS`}
+          {`Network Fee: ${formatNumber(transaction.network_fee)} CRON`}
         </Typography>
         <Typography className={classes.font} variant="body1">
-          {`System Fee: ${formatNumber(transaction.system_fee)} GAS`}
+          {`System Fee: ${formatNumber(transaction.system_fee)} CRON`}
         </Typography>
       </div>
     </div>
